@@ -22,8 +22,7 @@ def get_process_with_name(name):
             pid = pr.pid
             if pid == 0:
                 continue
-
-            if pr.name().find(name) > 0:
+            if pr.name().find(name) >= 0:
                 logger.info("Found one process: {}".format(pr.name()))
                 if found is None:
                     found = pr
