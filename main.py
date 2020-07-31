@@ -52,7 +52,7 @@ def config_argument_parser():
     parser = argparse.ArgumentParser(description='Tool to monitor a process')
     parser.add_argument('--process', help='process to monitor')
     parser.add_argument('--report_path', help='path to keep report')
-    parser.add_argument('--report_name', help='name of the report', default="report.cvs")
+    parser.add_argument('--report_name', help='name of the report', default="report.csv")
     parser.add_argument('--collect_interval', help='collect interval in millisecond', default=1000, type=int)
     parser.add_argument('--headless', default=False, type=bool)
     return parser.parse_args()
